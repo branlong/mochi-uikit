@@ -2118,12 +2118,12 @@ var socials = [
     {
         label: "Discord",
         icon: "TelegramIcon",
-        href: "https://t.me/cubdefi"
+        href: "https://t.me/mochiswap"
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/financeleo",
+        href: "https://twitter.com/mochiswap",
     },
 ];
 var MENU_HEIGHT = 64;

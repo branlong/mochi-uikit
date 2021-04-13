@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/bobadefi/boba-uikit",
+  "repository": "https://github.com/mochiswap/mochi-uikit",
   "license": "MIT",
   "scripts": {
     "rmDistWin": "rmdir /s /q dist",
