@@ -2187,13 +2187,13 @@ var templateObject_1$A, templateObject_2$b;
 var MenuLink = function (_a) {
     var href = _a.href, target = _a.target, otherProps = __rest(_a, ["href", "target"]);
     var isHttpLink = href === null || href === void 0 ? void 0 : href.startsWith("http");
-    var targetBlank = "";
+    var targetBlank = "target=" + target;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : NavLink;
     var props = isHttpLink ? { href: href } : { to: href };
-    if (target === "_blank") {
-        targetBlank = "target=_blank";
-    }
+    // if(target==="_blank"){
+    //   targetBlank = "target=_blank"
+    // }
     return React.createElement(Tag, __assign({}, props, otherProps, targetBlank));
 };
 
