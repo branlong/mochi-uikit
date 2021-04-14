@@ -10,7 +10,7 @@ const MenuLink: React.FC<AnchorHTMLAttributes<HTMLAnchorElement>> = ({ href, ...
   //   targetBlank = "target=_blank"
   // }
   const targetBlank = "target=_blank";
-  return <Tag {...props} {...otherProps} {..."target=_blank"} />;
+  return <Tag {...props} {...otherProps} />;
 };
 
 export default MenuLink;

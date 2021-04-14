@@ -2190,7 +2190,7 @@ var MenuLink = function (_a) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : NavLink;
     var props = isHttpLink ? { href: href } : { to: href };
-    return React.createElement(Tag, __assign({}, props, otherProps, "target=_blank"));
+    return React.createElement(Tag, __assign({}, props, otherProps));
 };
 
 var Icons = IconModule;
