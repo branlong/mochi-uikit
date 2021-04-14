@@ -32,7 +32,7 @@ export interface MenuSubEntry {
 export interface MenuEntry {
   label: string;
   icon: string;
-  blank: boolean;
+  target: string;
   items?: MenuSubEntry[];
   href?: string;
   calloutClass?: string;
