@@ -2108,11 +2108,6 @@ var socials = [
         href: "https://t.me/mochiswap"
     },
     {
-        label: "Discord2",
-        icon: "GroupsIcon",
-        href: "https://discord.gg/nQndFAK3"
-    },
-    {
         label: "Twitter",
         icon: "TwitterIcon",
         href: "https://twitter.com/mochiswap",
