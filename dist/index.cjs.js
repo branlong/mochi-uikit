@@ -2198,13 +2198,15 @@ var Accordion = function (_a) {
 var templateObject_1$A, templateObject_2$b;
 
 var MenuLink = function (_a) {
-    var href = _a.href, otherProps = __rest(_a, ["href"]);
+    var href = _a.href, target = _a.target, otherProps = __rest(_a, ["href", "target"]);
     var isHttpLink = href === null || href === void 0 ? void 0 : href.startsWith("http");
     var targetBlank = "";
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : reactRouterDom.NavLink;
     var props = isHttpLink ? { href: href } : { to: href };
-    targetBlank = isHttpLink ? "target=_blank" : "target=_blank";
+    if (target === "_blank") {
+        targetBlank = "target=_blank";
+    }
     return React__default['default'].createElement(Tag, __assign({}, props, otherProps, targetBlank));
 };
 
@@ -2222,7 +2224,7 @@ var PanelBody = function (_a) {
         if (entry.items) {
             return (React__default['default'].createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
                 entry.items.map(function (item) { return (React__default['default'].createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
-                    React__default['default'].createElement(MenuLink, { href: item.href }, item.label))); })));
+                    React__default['default'].createElement(MenuLink, { href: item.href, target: item.target }, item.label))); })));
         }
         return (React__default['default'].createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
             React__default['default'].createElement(MenuLink, { href: entry.href, target: "_blank", onClick: handleClick },
