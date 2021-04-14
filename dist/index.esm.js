@@ -2092,7 +2092,7 @@ var links = [
             },
             {
                 label: "Blog",
-                href: "https://peakd.com/@mochiswap",
+                href: "https://mochiswap.medium.com",
             },
             {
                 label: "Discord",
@@ -2190,7 +2190,8 @@ var MenuLink = function (_a) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : NavLink;
     var props = isHttpLink ? { href: href } : { to: href };
-    return React.createElement(Tag, __assign({}, props, otherProps));
+    var targetblank = isHttpLink ? "target=_blank" : "target=_blank";
+    return React.createElement(Tag, __assign({}, props, otherProps, targetblank));
 };
 
 var Icons = IconModule;
@@ -2210,7 +2211,7 @@ var PanelBody = function (_a) {
                     React.createElement(MenuLink, { href: item.href }, item.label))); })));
         }
         return (React.createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
-            React.createElement(MenuLink, { href: entry.href, onClick: handleClick },
+            React.createElement(MenuLink, { href: entry.href, target: "_blank", onClick: handleClick },
                 iconElement,
                 React.createElement(LinkLabel, { isPushed: isPushed }, entry.label))));
     })));
@@ -2691,7 +2692,7 @@ var templateObject_1$K;
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#1993fb",
+    primary: "#ED4B9E",
     primaryBright: "#31b3f7",
     primaryDark: "#024179",
     secondary: "#0675B1",
