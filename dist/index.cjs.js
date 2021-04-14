@@ -2198,7 +2198,7 @@ var Accordion = function (_a) {
 var templateObject_1$A, templateObject_2$b;
 
 var MenuLink = function (_a) {
-    var href = _a.href; _a.target; var otherProps = __rest(_a, ["href", "target"]);
+    var href = _a.href, otherProps = __rest(_a, ["href"]);
     var isHttpLink = href === null || href === void 0 ? void 0 : href.startsWith("http");
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : reactRouterDom.NavLink;
