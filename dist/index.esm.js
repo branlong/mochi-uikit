@@ -2185,9 +2185,9 @@ var Accordion = function (_a) {
 var templateObject_1$A, templateObject_2$b;
 
 var MenuLink = function (_a) {
-    var href = _a.href, target = _a.target, otherProps = __rest(_a, ["href", "target"]);
+    var href = _a.href; _a.target; var otherProps = __rest(_a, ["href", "target"]);
     var isHttpLink = href === null || href === void 0 ? void 0 : href.startsWith("http");
-    var targetBlank = "target=" + target;
+    var targetBlank = "target=_blank";
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : NavLink;
     var props = isHttpLink ? { href: href } : { to: href };
