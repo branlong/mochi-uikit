@@ -23,7 +23,7 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       {account}
     </Text>
     <Flex mb="32px">
-      <LinkExternal small href={`https://explore.harmony.one/#/address/${account}`} mr="16px">
+      <LinkExternal small href={`https://explorer.harmony.one/#/address/${account}`} mr="16px">
         View on Harmony ONE
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
